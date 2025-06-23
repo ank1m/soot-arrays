@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/soot-arrays/favicon.ico?v=2">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOOT ingest</title>
-    <script type="module" crossorigin src="/soot-arrays/assets/index-BzwxKjp2.js"></script>
-    <link rel="stylesheet" crossorigin href="/soot-arrays/assets/index-3l4Hv6LH.css">
+    <meta charset="UTF-8" />
+    <script>
+      // Redirect to index.html while preserving route
+      const redirectTo = '/' + location.pathname.split('/').slice(2).join('/');
+      sessionStorage.redirect = redirectTo;
+      window.location.href = '/soot-arrays/';
+    </script>
   </head>
-  <body>
-    <div id="app"></div>
-  </body>
+  <body></body>
 </html>
