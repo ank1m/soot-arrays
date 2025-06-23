@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Redirect to index.html while preserving route
+      const redirectTo = '/' + location.pathname.split('/').slice(2).join('/');
+      sessionStorage.redirect = redirectTo;
+      window.location.href = '/my-vue-app/';
+    </script>
+  </head>
+  <body></body>
+</html>
